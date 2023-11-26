@@ -22,16 +22,23 @@ class LoginScreen extends StatelessWidget {
               labelText: 'Email',
             ),
           ),
+          const SizedBox(
+            height: 25,
+          ),
           TextFormField(
             decoration: const InputDecoration(
               labelText: 'Password',
             ),
           ),
+          const SizedBox(
+            height: 25,
+          ),
           Container(
             height: 50,
             width: MediaQuery.of(context).size.width - 40,
-            decoration: const BoxDecoration(
+            decoration: BoxDecoration(
               color: Colors.pink,
+              borderRadius: BorderRadius.circular(10),
             ),
             child: const Center(
               child: Text(
