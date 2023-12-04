@@ -39,6 +39,9 @@ class LoginScreen extends StatelessWidget {
               height: 25,
             ),
             InkWell(
+              onTap: () {
+                print('Logged In!');
+              },
               child: Container(
                 height: 50,
                 width: MediaQuery.of(context).size.width - 40,
