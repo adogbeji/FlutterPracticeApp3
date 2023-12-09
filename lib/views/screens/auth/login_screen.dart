@@ -62,6 +62,9 @@ class LoginScreen extends StatelessWidget {
                 ),
               ),
             ),
+            InkWell(
+              child: const Text('Need An Account?'),
+            ),
           ],
         ),
       ),
