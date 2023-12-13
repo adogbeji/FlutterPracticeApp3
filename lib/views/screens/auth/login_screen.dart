@@ -62,11 +62,15 @@ class LoginScreen extends StatelessWidget {
                 ),
               ),
             ),
-            InkWell(
-              onTap: () {
-                print('Pressed!');
-              },
-              child: Text('Need An Account?'),
+            // InkWell(
+            //   onTap: () {
+            //     print('Pressed!');
+            //   },
+            //   child: const Text('Need An Account?'),
+            // ),
+            TextButton(
+              onPressed: () {},
+              child: const Text('Need An Account?'),
             ),
           ],
         ),
