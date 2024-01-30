@@ -22,12 +22,27 @@ class RegisterScreen extends StatelessWidget {
           ),
           TextFormField(
             decoration: const InputDecoration(
+              labelText: 'Full Name',
+              hintText: 'Enter Full Name',
+              prefixIcon: Icon(
+                Icons.person,
+                color: Colors.pink,
+              ),
+              // border: OutlineInputBorder(),
+            ),
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          TextFormField(
+            decoration: const InputDecoration(
               labelText: 'Email Address',
               hintText: 'Enter Email Address',
               prefixIcon: Icon(
                 Icons.email,
                 color: Colors.pink,
               ),
+              // border: OutlineInputBorder(),
             ),
           ),
         ],
