@@ -45,6 +45,20 @@ class RegisterScreen extends StatelessWidget {
               // border: OutlineInputBorder(),
             ),
           ),
+          const SizedBox(
+            height: 20,
+          ),
+          TextFormField(
+            decoration: const InputDecoration(
+              labelText: 'Password',
+              hintText: 'Enter Password',
+              prefixIcon: Icon(
+                Icons.lock,
+                color: Colors.pink,
+              ),
+              // border: OutlineInputBorder(),
+            ),
+          ),
         ],
       ),
     );
