@@ -17,9 +17,12 @@ class RegisterScreen extends StatelessWidget {
               letterSpacing: 4,
             ),
           ),
+
           const SizedBox(
             height: 20,
           ),
+          
+          // NAME INPUT FIELD
           TextFormField(
             decoration: const InputDecoration(
               labelText: 'Full Name',
@@ -31,9 +34,12 @@ class RegisterScreen extends StatelessWidget {
               // border: OutlineInputBorder(),
             ),
           ),
+
           const SizedBox(
             height: 20,
           ),
+
+          // EMAIL INPUT FIELD
           TextFormField(
             decoration: const InputDecoration(
               labelText: 'Email Address',
@@ -45,9 +51,12 @@ class RegisterScreen extends StatelessWidget {
               // border: OutlineInputBorder(),
             ),
           ),
+
           const SizedBox(
             height: 20,
           ),
+
+          // PASSWORD INPUT FIELD
           TextFormField(
             decoration: const InputDecoration(
               labelText: 'Password',
@@ -57,6 +66,16 @@ class RegisterScreen extends StatelessWidget {
                 color: Colors.pink,
               ),
               // border: OutlineInputBorder(),
+            ),
+          ),
+          
+          // REGISTER BUTTON
+          Container(
+            height: 50,
+            width: MediaQuery.of(context).size.width - 40,
+            decoration: BoxDecoration(
+              color: Colors.pink,
+              borderRadius: BorderRadius.circular(8),
             ),
           ),
         ],
