@@ -21,7 +21,7 @@ class RegisterScreen extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-          
+
           // NAME INPUT FIELD
           TextFormField(
             decoration: const InputDecoration(
@@ -68,7 +68,11 @@ class RegisterScreen extends StatelessWidget {
               // border: OutlineInputBorder(),
             ),
           ),
-          
+
+          const SizedBox(
+            height: 20,
+          ),
+
           // REGISTER BUTTON
           Container(
             height: 50,
@@ -76,6 +80,17 @@ class RegisterScreen extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.pink,
               borderRadius: BorderRadius.circular(8),
+            ),
+            child: const Center(
+              child: Text(
+                'Register',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                  letterSpacing: 4,
+                ),
+              ),
             ),
           ),
         ],
