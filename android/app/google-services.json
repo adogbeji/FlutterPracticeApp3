@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "328543137511",
+    "project_id": "practice-app-3-61658",
+    "storage_bucket": "practice-app-3-61658.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:328543137511:android:db5f99db6b53d2c551bc42",
+        "android_client_info": {
+          "package_name": "com.akponasa.practice_app_3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbXHdl0ncyLdSsTu6bNUzoQy9ppUnHz34"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
