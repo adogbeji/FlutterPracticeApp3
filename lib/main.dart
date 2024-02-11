@@ -1,9 +1,23 @@
+import 'dart:io';
+
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 import './views/screens/auth/login_screen.dart';
 import './views/screens/auth/register_screen.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  Platform.isAndroid
+      ? await Firebase.initializeApp(
+          options: const FirebaseOptions(
+              apiKey: 'AIzaSyAbXHdl0ncyLdSsTu6bNUzoQy9ppUnHz34',
+              appId: '1:328543137511:android:db5f99db6b53d2c551bc42',
+              messagingSenderId: '328543137511',
+              projectId: 'practice-app-3-61658',
+              storageBucket: 'gs://practice-app-3-61658.appspot.com'))
+      : await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
