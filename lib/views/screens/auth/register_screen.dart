@@ -26,6 +26,13 @@ class RegisterScreen extends StatelessWidget {
 
           // NAME INPUT FIELD
           TextFormField(
+            validator: (value) {
+              if (value!.isEmpty) {
+                return 'Name can\'t be empty!';
+              } else {
+                return null;
+              }
+            },
             decoration: const InputDecoration(
               labelText: 'Full Name',
               hintText: 'Enter Full Name',
@@ -43,6 +50,13 @@ class RegisterScreen extends StatelessWidget {
 
           // EMAIL INPUT FIELD
           TextFormField(
+            validator: (value) {
+              if (value!.isEmpty) {
+                return 'Email can\'t be empty!';
+              } else {
+                return null;
+              }
+            },
             decoration: const InputDecoration(
               labelText: 'Email Address',
               hintText: 'Enter Email Address',
@@ -60,6 +74,13 @@ class RegisterScreen extends StatelessWidget {
 
           // PASSWORD INPUT FIELD
           TextFormField(
+            validator: (value) {
+              if (value!.isEmpty) {
+                return 'Password can\'t be empty!';
+              } else {
+                return null;
+              }
+            },
             decoration: const InputDecoration(
               labelText: 'Password',
               hintText: 'Enter Password',
