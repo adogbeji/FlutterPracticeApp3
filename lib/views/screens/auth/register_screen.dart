@@ -23,11 +23,11 @@ class RegisterScreen extends StatelessWidget {
                 letterSpacing: 4,
               ),
             ),
-        
+
             const SizedBox(
               height: 20,
             ),
-        
+
             // NAME INPUT FIELD
             TextFormField(
               validator: (value) {
@@ -47,11 +47,11 @@ class RegisterScreen extends StatelessWidget {
                 // border: OutlineInputBorder(),
               ),
             ),
-        
+
             const SizedBox(
               height: 20,
             ),
-        
+
             // EMAIL INPUT FIELD
             TextFormField(
               validator: (value) {
@@ -71,11 +71,11 @@ class RegisterScreen extends StatelessWidget {
                 // border: OutlineInputBorder(),
               ),
             ),
-        
+
             const SizedBox(
               height: 20,
             ),
-        
+
             // PASSWORD INPUT FIELD
             TextFormField(
               validator: (value) {
@@ -95,11 +95,11 @@ class RegisterScreen extends StatelessWidget {
                 // border: OutlineInputBorder(),
               ),
             ),
-        
+
             const SizedBox(
               height: 20,
             ),
-        
+
             // REGISTER BUTTON
             InkWell(
               onTap: () {
@@ -129,16 +129,19 @@ class RegisterScreen extends StatelessWidget {
                 ),
               ),
             ),
-        
+
             const SizedBox(
               height: 20,
             ),
-        
+
             TextButton(
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return const LoginScreen();
-                }));
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) {
+                    return LoginScreen();
+                  }),
+                );
               },
               child: const Text('Already have an account?'),
             ),
