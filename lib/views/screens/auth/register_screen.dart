@@ -5,6 +5,10 @@ import './login_screen.dart';
 class RegisterScreen extends StatelessWidget {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
+  late String fullName;
+  late String email;
+  late String password;
+
   RegisterScreen({super.key});
 
   @override
