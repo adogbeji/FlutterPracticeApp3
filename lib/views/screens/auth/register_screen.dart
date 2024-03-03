@@ -34,6 +34,9 @@ class RegisterScreen extends StatelessWidget {
 
             // NAME INPUT FIELD
             TextFormField(
+              onChanged: (value) {
+                fullName = value;
+              },
               validator: (value) {
                 if (value!.isEmpty) {
                   return 'Name can\'t be empty!';
@@ -58,6 +61,9 @@ class RegisterScreen extends StatelessWidget {
 
             // EMAIL INPUT FIELD
             TextFormField(
+              onChanged: (value) {
+                email = value;
+              },
               validator: (value) {
                 if (value!.isEmpty) {
                   return 'Email can\'t be empty!';
@@ -82,6 +88,9 @@ class RegisterScreen extends StatelessWidget {
 
             // PASSWORD INPUT FIELD
             TextFormField(
+              onChanged: (value) {
+                password = value;
+              },
               validator: (value) {
                 if (value!.isEmpty) {
                   return 'Password can\'t be empty!';
