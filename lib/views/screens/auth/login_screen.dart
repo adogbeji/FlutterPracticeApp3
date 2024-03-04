@@ -32,6 +32,9 @@ class LoginScreen extends StatelessWidget {
                 height: 25,
               ),
               TextFormField(
+                onChanged: (value) {
+                  email = value;
+                },
                 validator: (value) {
                   if (value!.isEmpty) {
                     return 'Email can\'t be empty!';
@@ -47,6 +50,9 @@ class LoginScreen extends StatelessWidget {
                 height: 25,
               ),
               TextFormField(
+                onChanged: (value) {
+                  password = value;
+                },
                 validator: (value) {
                   if (value!.isEmpty) {
                     return 'Password can\'t be empty!';
@@ -65,7 +71,9 @@ class LoginScreen extends StatelessWidget {
                 onTap: () {
                   // print('Logged In!');
                   if (_formKey.currentState!.validate()) {
-                    print('Valid!');
+                    // print('Valid!');
+                    print(email);
+                    print(password);
                   } else {
                     print('Not Valid!');
                   }
