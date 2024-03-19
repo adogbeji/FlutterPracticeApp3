@@ -9,7 +9,10 @@ class AuthController {
     try {
       await _auth.createUserWithEmailAndPassword(email: email, password: password);
 
-    } catch (e) {}
+      res = 'Account created!';
+    } catch (e) {
+      res = e.toString();
+    }
 
     return res;
   }
