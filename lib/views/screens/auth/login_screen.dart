@@ -9,6 +9,14 @@ class LoginScreen extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
+          const Text('Log In', style: TextStyle(
+            fontSize: 22,
+            fontWeight: FontWeight.bold,
+            letterSpacing: 4,
+          ),),
+
+          const SizedBox(height: 20,),
+
           // EMAIL INPUT FIELD
           TextFormField(
             decoration: const InputDecoration(
