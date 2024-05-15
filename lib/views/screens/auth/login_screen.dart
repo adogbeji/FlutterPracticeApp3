@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -8,61 +6,66 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          const Text(
-            'Log In',
-            style: TextStyle(
-              fontSize: 22,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 4,
+      body: Padding(
+        padding: const EdgeInsets.all(15.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            const Text(
+              'Log In',
+              style: TextStyle(
+                fontSize: 22,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 4,
+              ),
             ),
-          ),
-
-          const SizedBox(
-            height: 20,
-          ),
-
-          // EMAIL INPUT FIELD
-          TextFormField(
-            decoration: const InputDecoration(
-              labelText: 'Email',
+        
+            const SizedBox(
+              height: 20,
             ),
-          ),
-
-          const SizedBox(
-            height: 20,
-          ),
-
-          // PASSWORD INPUT FIELD
-          TextFormField(
-            decoration: const InputDecoration(
-              labelText: 'Password',
+        
+            // EMAIL INPUT FIELD
+            TextFormField(
+              decoration: const InputDecoration(
+                labelText: 'Email',
+              ),
             ),
-          ),
-
-          // LOGIN BUTTON
-          Container(
-            width: MediaQuery.of(context).size.width - 40,
-            height: 50,
-            decoration: BoxDecoration(
-              color: Colors.pink,
-              borderRadius: BorderRadius.circular(10),
+        
+            const SizedBox(
+              height: 20,
             ),
-            child: const Center(
-              child: Text(
-                'Log In',
-                style: TextStyle(
-                  fontSize: 22,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                  letterSpacing: 4,
+        
+            // PASSWORD INPUT FIELD
+            TextFormField(
+              decoration: const InputDecoration(
+                labelText: 'Password',
+              ),
+            ),
+        
+            const SizedBox(height: 20,),
+        
+            // LOGIN BUTTON
+            Container(
+              width: MediaQuery.of(context).size.width - 40,
+              height: 50,
+              decoration: BoxDecoration(
+                color: Colors.pink,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: const Center(
+                child: Text(
+                  'Log In',
+                  style: TextStyle(
+                    fontSize: 22,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 4,
+                  ),
                 ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
