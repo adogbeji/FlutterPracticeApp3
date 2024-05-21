@@ -19,31 +19,33 @@ class LoginScreen extends StatelessWidget {
                 letterSpacing: 4,
               ),
             ),
-        
+
             const SizedBox(
               height: 20,
             ),
-        
+
             // EMAIL INPUT FIELD
             TextFormField(
               decoration: const InputDecoration(
                 labelText: 'Email',
               ),
             ),
-        
+
             const SizedBox(
               height: 20,
             ),
-        
+
             // PASSWORD INPUT FIELD
             TextFormField(
               decoration: const InputDecoration(
                 labelText: 'Password',
               ),
             ),
-        
-            const SizedBox(height: 20,),
-        
+
+            const SizedBox(
+              height: 20,
+            ),
+
             // LOGIN BUTTON
             InkWell(
               onTap: () {
@@ -68,6 +70,11 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ),
               ),
+            ),
+
+            TextButton(
+              onPressed: () {},
+              child: const Text('Need An Account?'),
             ),
           ],
         ),
