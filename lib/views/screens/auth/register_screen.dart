@@ -5,11 +5,28 @@ class RegisterScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Text('Register', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, letterSpacing: 4,),),
+          const Text(
+            'Register',
+            style: TextStyle(
+              fontSize: 22,
+              fontWeight: FontWeight.bold,
+              letterSpacing: 4,
+            ),
+          ),
+
+          const SizedBox(height: 20,),
+          
+          // EMAIL INPUT FIELD
+          TextFormField(
+            decoration: const InputDecoration(
+              labelText: 'Email',
+              hintText: 'Enter Email Address',
+            ),
+          ),
         ],
       ),
     );
