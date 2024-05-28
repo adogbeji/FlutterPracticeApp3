@@ -20,11 +20,23 @@ class RegisterScreen extends StatelessWidget {
 
           const SizedBox(height: 20,),
           
+          // NAME INPUT FIELD
+          TextFormField(
+            decoration: const InputDecoration(
+              labelText: 'Name',
+              hintText: 'Enter Name',
+              prefixIcon: Icon(Icons.person, color: Colors.pink,),
+            ),
+          ),
+
+          const SizedBox(height: 20,),
+          
           // EMAIL INPUT FIELD
           TextFormField(
             decoration: const InputDecoration(
               labelText: 'Email',
               hintText: 'Enter Email Address',
+              prefixIcon: Icon(Icons.email, color: Colors.pink,),
             ),
           ),
         ],
