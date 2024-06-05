@@ -39,6 +39,15 @@ class RegisterScreen extends StatelessWidget {
               prefixIcon: Icon(Icons.email, color: Colors.pink,),
             ),
           ),
+
+          // PASSWORD INPUT FIELD
+          TextFormField(
+            decoration: const InputDecoration(
+              labelText: 'Password',
+              hintText: 'Enter Password',
+              prefixIcon: Icon(Icons.lock, color: Colors.pink,),
+            ),
+          ),
         ],
       ),
     );
