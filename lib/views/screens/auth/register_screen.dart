@@ -19,11 +19,11 @@ class RegisterScreen extends StatelessWidget {
                 letterSpacing: 4,
               ),
             ),
-        
+
             const SizedBox(
               height: 20,
             ),
-        
+
             // NAME INPUT FIELD
             TextFormField(
               decoration: const InputDecoration(
@@ -35,11 +35,11 @@ class RegisterScreen extends StatelessWidget {
                 ),
               ),
             ),
-        
+
             const SizedBox(
               height: 20,
             ),
-        
+
             // EMAIL INPUT FIELD
             TextFormField(
               decoration: const InputDecoration(
@@ -51,11 +51,11 @@ class RegisterScreen extends StatelessWidget {
                 ),
               ),
             ),
-        
+
             const SizedBox(
               height: 20,
             ),
-        
+
             // PASSWORD INPUT FIELD
             TextFormField(
               decoration: const InputDecoration(
@@ -67,7 +67,9 @@ class RegisterScreen extends StatelessWidget {
                 ),
               ),
             ),
-        
+
+            const SizedBox(height: 20,),
+
             // REGISTER BUTTON
             Container(
               width: MediaQuery.of(context).size.width - 40,
@@ -77,13 +79,23 @@ class RegisterScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8),
               ),
               child: const Center(
-                child: Text('Register', style: TextStyle(
-                  fontSize: 18,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                  letterSpacing: 4,
-                ),),
+                child: Text(
+                  'Register',
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 4,
+                  ),
+                ),
               ),
+            ),
+
+            const SizedBox(height: 20,),
+
+            TextButton(
+              onPressed: () {},
+              child: const Text('Already Have An Account?'),
             ),
           ],
         ),
