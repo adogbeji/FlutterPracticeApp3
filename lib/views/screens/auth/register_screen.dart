@@ -71,21 +71,26 @@ class RegisterScreen extends StatelessWidget {
             const SizedBox(height: 20,),
 
             // REGISTER BUTTON
-            Container(
-              width: MediaQuery.of(context).size.width - 40,
-              height: 52,
-              decoration: BoxDecoration(
-                color: Colors.pink,
-                borderRadius: BorderRadius.circular(8),
-              ),
-              child: const Center(
-                child: Text(
-                  'Register',
-                  style: TextStyle(
-                    fontSize: 18,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    letterSpacing: 4,
+            InkWell(
+              onTap: () {
+                print('Pressed!');
+              },
+              child: Container(
+                width: MediaQuery.of(context).size.width - 40,
+                height: 52,
+                decoration: BoxDecoration(
+                  color: Colors.pink,
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: const Center(
+                  child: Text(
+                    'Register',
+                    style: TextStyle(
+                      fontSize: 18,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: 4,
+                    ),
                   ),
                 ),
               ),
